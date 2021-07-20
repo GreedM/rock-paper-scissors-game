@@ -1,0 +1,67 @@
+html {
+    height:100%;
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    padding-top: 10rem;
+}
+
+body, h1 {
+    color:#FFF;
+    text-align: center;
+}
+
+.user-result {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.options {
+    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.options > div {
+    margin: 5px;
+}
+
+.playerResult {
+    padding-bottom: 2rem;
+}
+
+#rock,#paper,#scissors {
+    background: #0f3443;
+    padding:10px;
+    border: 1px solid #0f3443;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+@media all and (max-width:767px) {
+    body {
+        padding-top: 5rem;
+    }
+    #rock,#paper,#scissors {
+        width: 100%;
+    }
+}
+
+#rock:hover,#paper:hover,#scissors:hover {
+    background: #FFF;
+    color:#0f3443;
+    cursor: pointer;
+    border: 1px solid #FFF;
+}
